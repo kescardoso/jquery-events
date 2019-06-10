@@ -3,31 +3,6 @@ body{
  	background-color: #eee;
 }
 
-/**** JQuery Challenge ****/
-
-/* <p> red */
-.highlight-peachy {
-	background-color: #ffc0b4;
-	color: #bfff00;
-	letter-spacing: 2px;
-	text-align: center;
-}
-
-/* <h2> lightblue */
-.highlight-skyblue {
-	background-color: #d4f2f2;
-	color: #ce5ece;
-	letter-spacing: 2px;
-	text-align: center;
-}
-
-/* single <h2> increases font size on hover */
-.h2-big {
-	font-size: 2em;
-}
-
-/**** /JQuery Challenge ****/
-
 h1{
 	font-size: 3em;
 	text-align: center;
@@ -99,20 +74,6 @@ div{
 	padding: 20px;
 	background-color: #fff;
 }
-/*adds colour red to paragraphs when called by jquery function*/
-.highlight_text{
-	background-color: #EB5255;
-}
-/*adds colour lightblue to h2 background when called by jquery function*/
-.h2_color{
-	background-color: lightblue;
-	
-}
-/*increases font-size of  h2 when called by jquery function*/
-.h2_font_size{
-	font-size: 2em;
-}
-
 
 #my_footer{
 	width:100%;
@@ -121,7 +82,6 @@ div{
 #copyright{
 	margin-top:10px;
 	margin-bottom:10px;
-
 }
 
 /*************************
@@ -176,4 +136,47 @@ li{
 	li{
 		font-size: 2em;
 	}
+}
+
+
+
+/**** JQuery Challenge ****/
+
+/* <p> red */
+/*.highlight-peachy {*/
+/*	background-color: #ffc0b4;*/
+/*	color: #bfff00;*/
+/*	letter-spacing: 2px;*/
+/*	text-align: center;*/
+/*}*/
+
+/* <h2> lightblue */
+/*.highlight-skyblue {*/
+/*	background-color: #d4f2f2;*/
+/*	color: #ce5ece;*/
+/*	letter-spacing: 2px;*/
+/*	text-align: center;*/
+/*}*/
+
+/* single <h2> increases font size on hover */
+/*.h2-big {*/
+/*	font-size: 2em;*/
+/*}*/
+
+/*adds colour red to paragraphs when called by jquery function*/
+/*.highlight_text{*/
+/*	background-color: #EB5255;*/
+/*}*/
+/*adds colour lightblue to h2 background when called by jquery function*/
+/*.h2_color{*/
+/*	background-color: lightblue;*/
+	
+/*}*/
+/*increases font-size of  h2 when called by jquery function*/
+/*.h2_font_size{*/
+/*	font-size: 2em;*/
+/*}*/
+
+p {
+	display: none;
 }
