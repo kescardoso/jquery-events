@@ -167,11 +167,12 @@ li{
 /*.highlight_text{*/
 /*	background-color: #EB5255;*/
 /*}*/
+
 /*adds colour lightblue to h2 background when called by jquery function*/
 /*.h2_color{*/
 /*	background-color: lightblue;*/
-	
-/*}*/
+/*}**/
+
 /*increases font-size of  h2 when called by jquery function*/
 /*.h2_font_size{*/
 /*	font-size: 2em;*/
@@ -179,4 +180,8 @@ li{
 
 p {
 	display: none;
+}
+
+.highlight-card{
+	background-color: pink;
 }

@@ -156,14 +156,37 @@ $(document).ready(function() {
 		// returns all the <a> child elements that are within this paragraph
 	});
 	
-	// Traversing next/prev index.html
+	// index.html - button
 	$("button").click(function(){
 	    $(this).next().slideToggle("slow");
     });
     
-    // Traversing sideways cards-jquery.html
+    // cards-jquery.html - img slides down
     $("img").click(function(){
 	    $(this).next().children("p").slideDown("slow");
     });
+    
+    // // card background pink
+    // $(".card").click(function(){
+	   // $(this).toggleClass("highlight-card");
+    // });
+    
+    // Non slected cards are hidden with select_btn
+	$("#select_btn").click(function() {
+		$(".card:not(.highlight-card)").hide();	 
+	});
+	
+	// All cards are shown with all_btn
+	$("#all_btn").click(function() {
+		$(".card").show();	 
+	});
+	
+	// header and row
+	// when table header is clicked , removes selection class from all other table rows and
+    // adds the selection class to this table headers row only*
+     $(".card-head").click(function(){
+     	$(".card").siblings().addClass("highlight-card");
+    	
+     });
    
 });
