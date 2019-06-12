@@ -17,13 +17,30 @@ p{
 p.text{
 	background-color: red;
 }
-
 div{
 	border-radius: 4px;
 }
-
+.card{
+	flex:1; /* equal width to cards applied*/
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	min-width: 240px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff;
+}
 .card_image{
 	width: 100%;
+}
+.card_head{
+	flex:0;
+}
+.card_para{
+	flex:1 0 auto;
+}
+.card_bottom{
+	display: flex;
+	flex-flow:column;/*sets flex direction*/
 }
 .bottom_button{
 	display: flex;/*creates flex item*/
@@ -39,20 +56,7 @@ div{
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
-.card_bottom{
-	display: flex;
-	flex-flow:column;/*sets flex direction*/
-}
-.card_head{
-	flex:0;
-}
-.card_para{
-	flex:1 0 auto;
-}
-
-#container
-{
+#container{
 	display: flex;		/* makes container a flexbox*/
 	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
 	box-sizing:border-box;
@@ -65,16 +69,6 @@ div{
 	margin: auto;
 }
 
-.card{
-	flex:1; /* equal width to cards applied*/
-	display: flex;	/* make the contents controllable by flexbox*/
-	flex-flow:column;	/* */
-	min-width: 240px; /**/
-	margin: 10px;
-	padding: 20px;
-	background-color: #fff;
-}
-
 #my_footer{
 	width:100%;
 	text-align: center;
@@ -83,12 +77,14 @@ div{
 	margin-top:10px;
 	margin-bottom:10px;
 }
+.underline{
+  text-decoration:underline;
+}
+.border{
+  border: solid 5px #ccc;
+}
 
-/*************************
-Navigation
-
-**************************/
-
+/* Navigation */
 nav{
 	font-family: roboto;
 	background-color: #eee;
@@ -112,19 +108,11 @@ li{
 	text-align: center;
 	font-size: 1.3em;
 }
-
 #logoNav{
 	flex:6;
 	text-align: left;
 	font-size: 2em;
 	font-weight: bold;
-}
-
-.underline{
-  text-decoration:underline;
-}
-.border{
-  border: solid 5px #ccc;
 }
 
 /*for desktop layout*/
@@ -138,45 +126,7 @@ li{
 	}
 }
 
-
-
 /**** JQuery Challenge ****/
-
-/* <p> red */
-/*.highlight-peachy {*/
-/*	background-color: #ffc0b4;*/
-/*	color: #bfff00;*/
-/*	letter-spacing: 2px;*/
-/*	text-align: center;*/
-/*}*/
-
-/* <h2> lightblue */
-/*.highlight-skyblue {*/
-/*	background-color: #d4f2f2;*/
-/*	color: #ce5ece;*/
-/*	letter-spacing: 2px;*/
-/*	text-align: center;*/
-/*}*/
-
-/* single <h2> increases font size on hover */
-/*.h2-big {*/
-/*	font-size: 2em;*/
-/*}*/
-
-/*adds colour red to paragraphs when called by jquery function*/
-/*.highlight_text{*/
-/*	background-color: #EB5255;*/
-/*}*/
-
-/*adds colour lightblue to h2 background when called by jquery function*/
-/*.h2_color{*/
-/*	background-color: lightblue;*/
-/*}**/
-
-/*increases font-size of  h2 when called by jquery function*/
-/*.h2_font_size{*/
-/*	font-size: 2em;*/
-/*}*/
 
 p {
 	display: none;
